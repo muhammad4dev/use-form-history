@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS Form History Example</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 2rem; max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
+        input, textarea { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+        .controls { margin-top: 1rem; display: flex; gap: 0.5rem; }
+        button { padding: 0.5rem 1rem; cursor: pointer; }
+        button:disabled { opacity: 0.5; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <h1>Vanilla JS Example</h1>
+    
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" placeholder="Enter title">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" rows="4" placeholder="Enter description"></textarea>
+    </div>
+
+    <div class="controls">
+        <button id="undoBtn">Undo</button>
+        <button id="redoBtn">Redo</button>
+        <button id="logBtn">Log State</button>
+    </div>
+
+    <script type="module" src="./vanilla-basic.js"></script>
+</body>
+</html>

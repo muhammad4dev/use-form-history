@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Bind Form History Example</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .controls {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Auto-Bind Example</h1>
+    <p>This form is automatically tracked using <code>bindFormHistory</code>.</p>
+
+    <form id="myForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select name="role" id="role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                <option value="editor">Editor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="notifications" style="width: auto;">
+                Receive notifications
+            </label>
+        </div>
+    </form>
+
+    <div class="controls">
+        <button id="undoBtn">Undo (Ctrl+Z)</button>
+        <button id="redoBtn">Redo (Ctrl+Y)</button>
+    </div>
+
+    <script type="module" src="./vanilla-auto-bind.js"></script>
+</body>
+
+</html>

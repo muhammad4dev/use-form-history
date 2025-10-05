@@ -1,9 +1,20 @@
 {
   "name": "use-form-history",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Lightweight undo/redo state manager for forms with debounced snapshots and diff-based storage",
-  "author": "Your Name",
+  "author": "Muhammad Mustafa",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammad4dev/use-form-history.git"
+  },
+  "homepage": "https://muhammad4dev.github.io/use-form-history",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/muhammad4dev/use-form-history/blob/main/LICENSE"
+    }
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

@@ -8,11 +8,14 @@ export default defineConfig({
         'vanilla/index': 'src/vanilla/index.ts',
     },
     format: ['esm', 'cjs'],
-    dts: true,
+    dts: {
+        resolve: true,
+    },
     splitting: false,
     sourcemap: true,
     clean: true,
     treeshake: true,
     minify: false,
     external: ['react'],
+    bundle: true,
 });

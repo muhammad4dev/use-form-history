@@ -46,6 +46,22 @@
     "README.md",
     "LICENSE"
   ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts"
+      ],
+      "react": [
+        "./dist/react/index.d.ts"
+      ],
+      "core": [
+        "./dist/core/index.d.ts"
+      ],
+      "vanilla": [
+        "./dist/vanilla/index.d.ts"
+      ]
+    }
+  },
   "keywords": [
     "undo",
     "redo",

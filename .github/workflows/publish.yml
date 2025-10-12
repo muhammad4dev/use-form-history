@@ -27,8 +27,11 @@ jobs:
           node-version: "20"
           registry-url: "https://registry.npmjs.org"
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
       - name: Update npm
         run: npm install -g npm@latest
-      - run: npm install
+      - run: pnpm install --frozen-lockfile
       - run: npm run prepublishOnly
       - run: npm publish

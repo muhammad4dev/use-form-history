@@ -1,6 +1,6 @@
 {
   "name": "use-form-history",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight undo/redo state manager for forms with debounced snapshots and diff-based storage",
   "author": "Muhammad Mustafa",
   "license": "MIT",
